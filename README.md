@@ -19,10 +19,13 @@
 
 ## 📊 Machine Learning & Data Analysis
 
-### Model Comparison Analysis (Concrete & Heart Disease)
-* **Description:** โปรเจคเปรียบเทียบประสิทธิภาพระหว่างโมเดล Linear Regression และ Decision Tree โดยใช้เกณฑ์วัดผล MAE, MSE และ $R^2$ เพื่อหาโมเดลที่แม่นยำที่สุดสำหรับชุดข้อมูลที่ซับซ้อน
-* **Tools:** Python, Pandas, Scikit-learn, Matplotlib
-* **Links:** [Colab - Concrete Strength](https://colab.research.google.com/drive/1qB0_0G_Irj2zTUni4_ZWkorM-vMtdNi3) | [Colab - Heart Disease](https://colab.research.google.com/drive/1tcA7PP5Kvaiq0GJduRBXBfb1h3w-OfmP?usp=sharing)
+### Molecular Biology: Splice-Junction Classification
+* **Objective: จำแนกลำดับ DNA 60 ตัวอักษรออกเป็น 3 คลาส (EI, IE, N) เพื่อทำความเข้าใจกระบวนการ RNA splicing
+* **Data Preprocessing:** ใช้ Positional One-Hot Encoding เนื่องจากตำแหน่งของเบสมีความสำคัญสูงกว่าจำนวน | ทำ StandardScaler เพื่อปรับข้อมูลให้เสถียรสำหรับโมเดล SVM และ NN
+* **Modeling Strategy:** SVM: ปรับค่า C, Gamma และเลือกใช้ RBF Kernel | Neural Networks: ออกแบบ MLPClassifier โดยจูน Hidden Layers และ Batch Size
+* **Results:** โมเดล SVM มีความเสถียรและสามารถ Generalize กับข้อมูลใหม่ได้ดีกว่าเล็กน้อย โดยมี Test Accuracy อยู่ที่ 94.98%
+* **Tools:** Python, Scikit-learn, Pandas, SVM, Neural Networks (MLP)
+* **Links:** [Colab - Neural Networks ](https://colab.research.google.com/drive/1qB0_0G_Irj2zTUni4_ZWkorM-vMtdNi3) | [Colab - SVM](https://colab.research.google.com/drive/1tcA7PP5Kvaiq0GJduRBXBfb1h3w-OfmP?usp=sharing)
 
 ### BMW Price Prediction & EDA
 * **Description:** การทำ Exploratory Data Analysis (EDA) และ Data Cleaning เพื่อวิเคราะห์ปัจจัยที่มีผลต่อราคารถยนต์ BMW มือสอง และสร้างโมเดลทำนายราคาขาย
